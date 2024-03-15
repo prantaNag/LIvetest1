@@ -7,6 +7,10 @@ main() {
 //porer function calling
   double r = add(20, 20.50);
   print(r);
+
+  extra(Name: 'Shuvo', Age: 25);
+  extra(Name: 'Pranta', Age: 24);
+  extra(Name: 'Chaity', Age: 23);
 }
 
 //function
@@ -27,6 +31,10 @@ double add(int a, double b) {
   double result = a + b;
   return result;
 }
-
-
 //reusability
+
+void extra({required Name, int Age = 0}) {
+  print("Ki khobor, $Name");
+  print("Tomar Boyos: $Age");
+}
+
